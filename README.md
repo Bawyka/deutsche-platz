@@ -1,4 +1,4 @@
-deutsche-platz
+Deutsche Platz
 ==============
 
 German Words in 
