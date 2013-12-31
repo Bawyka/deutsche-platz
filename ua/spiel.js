@@ -2,107 +2,163 @@ $(function(){
 		
 	// Start Array
 	var st_words = [  
-					['Sonne','Sun'],             // 1
-				    ['Licht','Light'],		     // 2
-				    ['Morgen','Morning'],        // 3
-				    ['Nacht','Night'],		     // 4
-				    ['Wasser','Water'], 	     // 5
-				    ['Freund','Friend'],         // 6
-				    ['Sprache','Language'],      // 7
-					['Mutter','Mother'],	     // 8
-					['Hertz','Heart'],		     // 9
-					['Stein','Stone'],		     // 10
-					['Angst','Scare'],		     // 11
-					['Ritter','Rider'],		     // 12
-					['Entwicklung','Extension'], // 13
-					['Tag','Day'],				 // 14
-					['Grab','Grave'],			 // 15
-					['Zeit','Time'],			 // 16
-					['Vater','Father'],			 // 17
-					['Auge','Eye'],				 // 18
-					['Stück','Part'],			 // 19
-					['Holz','Wood'],			 // 20
-					['Kamerad','Companion'],	 // 21
-					['Mund','Mouth'],			 // 22
-					['Mond','Moon'],			 // 23
-					['Weg','Path'],				 // 24
-					['Schlag','Beat'],			 // 25
-					['Recht','Right'],			 // 26
-					['Glück','Luck'],			 // 27
-					['Mensch','Human'],			 // 28
-					['Zug','Train'],			 // 29
-					['Anmeldung','Registration'],// 30
-					['Geschichte','Story'],		 // 31
-					['Schnee','Snow'],			 // 32
-					['Bau','Construction'],		 // 33
-					['Kampf','Struggle'],		 // 34
-					['Tun','Activity'],			 // 35
-					['Feuer','Fire'],			 // 36
+					['Sonne','Сонце'],             // 1
+				    ['Licht','Світло'],		     // 2
+				    ['Morgen','Ранок'],        // 3
+				    ['Nacht','Нічь'],		     // 4
+				    ['Wasser','Вода'], 	     // 5
+				    ['Freund','Друг'],         // 6
+				    ['Sprache','Мова'],      // 7
+					['Mutter','Мати'],	     // 8
+					['Hertz','Серце'],		     // 9
+					['Stein','Камінь'],		     // 10
+					['Angst','Страх'],		     // 11
+					['Ritter','Рицарь'],		     // 12
+					['Entwicklung','Розширення'], // 13
+					['Tag','День'],				 // 14
+					['Grab','Могила'],			 // 15
+					['Zeit','Час'],			 // 16
+					['Vater','Батько'],			 // 17
+					['Auge','Око'],				 // 18
+					['Stück','Частина'],			 // 19
+					['Holz','Ліс'],			 // 20
+					['Kamerad','Компаньон'],	 // 21
+					['Mund','Рот'],			 // 22
+					['Mond','Луна'],			 // 23
+					['Weg','Шлях'],				 // 24
+					['Schlag','Удар'],			 // 25
+					['Recht','Право'],			 // 26
+					['Glück','Вдача'],			 // 27
+					['Mensch','Людина'],			 // 28
+					['Zug','Потяг'],			 // 29
+					['Anmeldung','Реєстрація'],// 30
+					['Geschichte','Історія'],		 // 31
+					['Schnee','Сніг'],			 // 32
+					['Bau','Конструкція'],		 // 33
+					['Kampf','Боротьба'],		 // 34
+					['Tun','Активність'],			 // 35
+					['Feuer','Вогонь'],			 // 36
 					
-					['Fahrung','Skills'],		 // 37
-					['Fahrrad','Bicycle'],		 // 38
-					['Nahrung','Food'],			 // 39
-					['Katze','Cat'],			 // 40
-					['Spiel','Game'],			 // 41
-					['Woche','Week'],			 // 42
-					['Jahr','Year'],			 // 43
-					['Kopf','Head'],			 // 44
-					['Hut','Hat'],				 // 45
-					['Hund','Dog'],				 // 46
-					['Klang','Sound'],			 // 47
-					['Himmel','Sky'],			 // 48
-					['Wunsch','Wish'],			 // 49
-					['Milch','Milk'],			 // 50
-					['Dorf','Village'],			 // 51
-					['Ort','Place'],			 // 52
-					['Melkerin','Milkmaid'],     // 53
-					['Ausgang','Exit'],			 // 54
-					['Meer','Sea'],				 // 55
-					['Fisch','Fish'],			 // 56
-					['Sicherheit','Security'],	 // 57
-					['Woche','Week'],			 // 58
-					['Monat','Month'],			 // 59
-					['Achtung','Attention'],	 // 60
-					['Gesundheit','Health'],	 // 61
-					['Zahn','Tooth'],			 // 62
-					['Geburtstag','Birthday'],	 // 63
-					['Weinnachten','Christmas'], // 64
-					['Geschenk','Gift'],		 // 65
-					['Gott','God'],				 // 66
-					['Suche','Search'],			 // 67
-					['Wahrheit','Truth'],		 // 68
-					['Regenbogen','Rainbow'],	 // 69
-					['Regen','Rain'],			 // 70
-					['Hintergrundbilder','Wallpappers'], // 71
-					['Kuh','Cow'],				 // 72
-					['Sieg','Victory'],			 // 73
-					['Stern','Star'],			 // 74
-					['Tee','Tea'],				 // 75
-					['Seite','Page'],			 // 76
-					['Nase','Nose'],			 // 77
-					['Haar','Hair'],			 // 78
-					['Anruf','Call'],			 // 79
-					['Bruder','Brother'],		 // 80
-					['Schule','School'],		 // 81
-					['Frühling','Spring'],		 // 82
-					['Höhe','Height'],			 // 83
-					['Breite','Width'],			 // 84
-					['Länge','Length'],			 // 85
-					['Mannschaft','Team'],		 // 86
-					['Maus','Mouse'],			 // 87
-					['Bär','Bear'],				 // 88
-					['Kühlschrank','Fridge'],	 // 89
-					['Arbeit','Work'],			 // 90
-					['Bein','Leg'],				 // 91
-					['Weiß','White'],			 // 92
-					['Buch','Book'],			 // 93
-					['Blitz','Flash'],			 // 94
-					['Abend','Evening'],		 // 95
-					['Zeitschrift','Magazine'],	 // 96
-					['Staubsauger','Hoover'],	 // 97
-					['Spur','Sign'],			 // 98
-					['Ewigkeit','Eternety'],	 // 99
-					['Mühe','Effort']			 // 100
+					['Fahrung','Вміння'],		 // 37
+					['Fahrrad','Велосипед'],		 // 38
+					['Nahrung','Їжа'],			 // 39
+					['Katze','Кіт'],			 // 40
+					['Spiel','Гра'],			 // 41
+					['Woche','Тиждень'],			 // 42
+					['Jahr','Рок'],			 // 43
+					['Kopf','Голова'],			 // 44
+					['Hut','Шляпа'],				 // 45
+					['Hund','Собака'],				 // 46
+					['Klang','Звук'],			 // 47
+					['Himmel','Небо'],			 // 48
+					['Wunsch','Мрія'],			 // 49
+					['Milch','Молоко'],			 // 50
+					['Dorf','Село'],			 // 51
+					['Ort','Місто'],			 // 52
+					['Melkerin','Доярка'],     // 53
+					['Ausgang','Вихід'],			 // 54
+					['Meer','Море'],				 // 55
+					['Fisch','Риба'],			 // 56
+					['Sicherheit','Безпека'],	 // 57
+					// ['Woche','Неділя'],			 // 58 repeat // should be off or replaced
+					['Monat','Місяць'],			 // 59
+					['Achtung','Увага'],	 // 60
+					['Gesundheit','Здоров\'я'],	 // 61
+					['Zahn','Зуб'],			 // 62
+					['Geburtstag','Деньнародження'],	 // 63
+					['Weinnachten','Різдво'], // 64
+					['Geschenk','Подарунок'],		 // 65
+					['Gott','Бог'],				 // 66
+					['Suche','Пошук'],			 // 67
+					['Wahrheit','Правда'],		 // 68
+					['Regenbogen','Веселка'],	 // 69
+					['Regen','Дощ'],			 // 70
+					['Hintergrundbilder','Шпалери'], // 71
+					['Kuh','Корова'],				 // 72
+					['Sieg','Перемога'],			 // 73
+					['Stern','Зірка'],			 // 74
+					['Tee','Чай'],				 // 75
+					['Seite','Сторінка'],			 // 76
+					['Nase','Ніс'],			 // 77
+					['Haar','Волосся'],			 // 78
+					['Anruf','Дзвінок'],			 // 79
+					['Bruder','Брат'],		 // 80
+					['Schule','Школа'],		 // 81
+					['Frühling','Весна'],		 // 82
+					['Höhe','Висота'],			 // 83
+					['Breite','Ширина'],			 // 84
+					['Länge','Довжина'],			 // 85
+					['Mannschaft','Команда'],		 // 86
+					['Maus','Миша'],			 // 87
+					['Bär','Ведмідь'],				 // 88
+					['Kühlschrank','Холодильник'],	 // 89
+					['Arbeit','Праця'],			 // 90
+					['Bein','Нога'],				 // 91
+					['Weiß','Білий'],			 // 92
+					['Buch','Книга'],			 // 93
+					['Blitz','Близкавка'],			 // 94
+					['Abend','Вечір'],		 // 95
+					['Zeitschrift','Журнал'],	 // 96
+					['Staubsauger','Пилесмок'],	 // 97
+					['Spur','Знак'],			 // 98
+					['Ewigkeit','Нескінченність'],	 // 99
+					['Mühe','Спроба'],			 // 100
+					
+					['Wahn', 'Маячня'],
+					['Trubel' ,'Переполох'],
+					['Rampenlicht','Прожектор'],
+					['Darstellung','Уявлення'],
+					['Beachtung','Відповідність'],
+					['Stimmung','Настрій'],
+					['Richtung','Напрямок'],
+					['Brief','Лист'],
+					['Gatter','Брама'],
+					['Kaff ','Звалище'],
+					['Trost','Розрада'],
+					['Wohl','Добробут'],
+					['Wink','Натяк'],
+					['Schale','Оболонка'],
+					['Käfer','Жук'],
+					['Stößel','Кулак'],
+					['Unterricht','Заняття'],
+					['Abzug','Віднімання'],
+					['Gelegenheit','Можливість'],
+					['Wehwehchen','Біль'],
+					['Lacher','Сміх'],
+					['Heft','Запитання'],
+					['Kessel','Котел'],
+					['Gesicht','Обличчя'],
+					['Wahnvorstellung','Омана'],
+					['Bengel','Їжак'],
+					['Wut','Лють'],
+					['Berühmtheit','Знаменитість'],
+					['Nähe','Близкість'],
+					['Taubheit','Онеміння'],
+					['Messer','Ніж'],
+					['Verbindung','Зв\'язок'],
+					['Ziegenbart','Еспаньйолка'],
+					['Lumpen','Ганчірка'],
+					['Berg','Гора'],
+					// ['Maul','Рот'], should be off cause repeat
+					['Schwanz','Хвіст'],
+					['Spalt','Разрив'],
+					['Fels','Камінь'],
+					['Brot','Хліб'],
+					['Erkrankung','Хвороба'],
+					['Zorn','Гнів'],
+					['Aufruhr','Бунт'],
+					['Zelt','Палатка'],
+					['Befehl','Приказ'],
+					['Abteilung','Відділення'],
+					['Gewalt','Насильство'],
+					['Ahnung','Ідея'],
+					['Abgestumpftheit','Тупість'],
+					['Zelle','Клітина'],
+					['Verzweiflung','Відчай'],
+					['Festung','Фортеця'],
+					['Verruf','Репутація'], 
+					['Belastung','Навантаження']
+					
 				];
 				
 	var de_words, clicks, step, pts, used = new Array(), current, scale_height, clicks_done;
@@ -287,7 +343,7 @@ $(function(){
 	  return array;
 	}
 	
-	$('#platz').on('click','a.new_start',function(){ 
+	$('#platz').on('click','.new_start',function(){ 
 	
 		$(this).fadeOut('slow',function(){
 		
